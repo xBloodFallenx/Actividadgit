@@ -8,6 +8,6 @@ public class Embutido extends Producto {
 
     @Override
     public void mostrarDetalles() {
-        System.out.println("Embutido: " + nombre + " (" + tipoCarne + ") | Precio: $" + precio);
+        System.out.println("Embutido: " + nombre + " | Precio: $" + precio + " | Tipo de Carne: " + tipoCarne);
     }
 }

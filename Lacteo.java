@@ -1,14 +1,13 @@
 public class Lacteo extends Producto {
-    private boolean requiereRefrigeracion;
+    private boolean requiereFrio;
 
-    public Lacteo(String nombre, double precio, boolean requiereRefrigeracion) {
+    public Lacteo(String nombre, double precio, boolean requiereFrio) {
         super(nombre, precio);
-        this.requiereRefrigeracion = requiereRefrigeracion;
+        this.requiereFrio = requiereFrio;
     }
 
     @Override
     public void mostrarDetalles() {
-        String refri = requiereRefrigeracion ? "Sí" : "No";
-        System.out.println("Lácteo: " + nombre + " | Requiere frío: " + refri + " | Precio: $" + precio);
+        System.out.println("Lácteo: " + nombre + " | Precio: $" + precio + " | Requiere Frío: " + (requiereFrio ? "Sí" : "No"));
     }
 }

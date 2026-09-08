@@ -1,4 +1,4 @@
-public class Producto {
+public abstract class Producto {
     protected String nombre;
     protected double precio;
 
@@ -7,7 +7,5 @@ public class Producto {
         this.precio = precio;
     }
 
-    public void mostrarDetalles() {
-        System.out.println("Producto: " + nombre + " | Precio: $" + precio);
-    }
+    public abstract void mostrarDetalles();
 }
